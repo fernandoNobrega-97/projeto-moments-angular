@@ -1,0 +1,4 @@
+<div *ngIf="momment">
+  <h2>Editando o momento <span>{{ momment.title }}</span>!</h2>
+  <app-moment-form (onSubmit)="editHandler($event)" [mommentData]="momment" [btnText]="btnText"></app-moment-form>
+</div>
